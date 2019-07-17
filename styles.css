@@ -1,0 +1,135 @@
+.main {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 1px 1px 1px 1px darkgray;
+}
+
+
+/* Shapes */
+
+.shape {
+    background-color: darkgray;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.oval {
+    width: 200px;
+    height: 100px;
+    border-radius: 100px/50px;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkgray;
+    background: white;
+}
+
+.star-six {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkgray;
+    position: relative;
+    top: -10px;
+
+}
+
+.star-six:after {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid darkgray;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+
+}
+
+.talkbubble {
+    width: 120px;
+    height: 80px;
+    background: darkgray;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid darkgray;
+    border-bottom: 13px solid transparent;
+}
+
+.pointer {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: darkgray;
+}
+
+.pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid darkgray;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
